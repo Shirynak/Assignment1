@@ -30,5 +30,5 @@ public class CollectNewspaperKarel extends Karel {
 		turnLeft();
 		turnLeft();
 	}
-	}
+	
 }
