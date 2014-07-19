@@ -2,7 +2,7 @@
 import stanford.karel.*;
 
 public class CollectNewspaperKarel extends Karel {
-	private void run() {
+	public void run() {
 		move();
 		move();
 		turnLeft();
