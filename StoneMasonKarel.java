@@ -1,5 +1,4 @@
-/*
- * File: StoneMasonKarel.java
+
  * --------------------------
  * The StoneMasonKarel subclass as it appears here does nothing.
  * When you finish writing it, it should solve the "repair the quad"
@@ -12,6 +11,8 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	// You fill in this part
+	public void run() {
+		
+	}
 
 }
