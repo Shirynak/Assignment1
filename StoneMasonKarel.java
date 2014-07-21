@@ -4,21 +4,46 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
 		for (int i = 0 ; i < 4; i++)
-		fillPothole();
-		
+		fillPotholeR();
+		fillPotholeL();
+		fillPotholeR();
+		fillPotholeL();
+		fillPotholeR();
+	
 	}
-	private void fillPothole() {
-		if (beepersPresent()) {
-			moveAlong();
+	private void fillPotholeR() {
+		if (noBeepersPresent()) {
+			putBeeper();			
 		} else {
-			putBeeper();
-			moveAlong();
+			if (frontIsClear()) {
+			move();
+			} else {
+				ascendLeft();
+			}
+		}
+}
+	private void fillPotholeL() {
+		if (noBeepersPresent()) {
+			putBeeper();			
+		} else {
+			if (frontIsClear()) {
+			move();
+			} else {
+				ascendRight();
+			}
 		}
 	}
-	private void moveAlong() {
+	
+	private void ascendLeft() {
+		turnLeft();
 		move();
+		turnLeft();
+	}
+	
+	private void ascendRight() {
+		turnRight();
 		move();
-		move();
-		move();
+		turnRight();
+	
 	}
 }
