@@ -9,16 +9,15 @@ public class StoneMasonKarel extends SuperKarel {
 	private void fillPothole() {
 		if (noBeepersPresent()) {
 			putBeeper();
-			move();
-			move();
-			move();
-			move();
+			moveAlong();
 		} else {
-			move();
-			move();
-			move();
-			move();
+			moveAlong();
 		}
 	}
-	
+	private void moveAlong() {
+		move();
+		move();
+		move();
+		move();
+	}
 }
