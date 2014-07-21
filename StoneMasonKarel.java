@@ -10,6 +10,7 @@ public class StoneMasonKarel extends SuperKarel {
 		if (beepersPresent()) {
 			moveAlong();
 		} else {
+			putBeeper();
 			moveAlong();
 		}
 	}
