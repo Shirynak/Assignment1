@@ -12,7 +12,7 @@ public class StoneMasonKarel extends SuperKarel {
 			moveAlong();
 		} else {
 			putBeeper();
-			moveAlong()
+			moveAlong();
 		}
 	}
 	private void moveAlong() {
