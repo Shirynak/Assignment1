@@ -3,12 +3,9 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
-		for (int i = 0 ; i < 1; i++)
+		for (int i = 0 ; i < 4; i++)
 		fillPotholeR();
-		fillPotholeL();
-		fillPotholeR();
-		fillPotholeL();
-		fillPotholeR();
+	
 	
 	}
 	private void fillPotholeR() {
@@ -22,17 +19,7 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 		}
 }
-	private void fillPotholeL() {
-		if (noBeepersPresent()) {
-			putBeeper();			
-		} else {
-			if (frontIsClear()) {
-			move();
-			} else {
-				ascendRight();
-			}
-		}
-	}
+	
 	
 	private void ascendLeft() {
 		turnLeft();
@@ -40,10 +27,5 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 	}
 	
-	private void ascendRight() {
-		turnRight();
-		move();
-		turnRight();
 	
-	}
 }
