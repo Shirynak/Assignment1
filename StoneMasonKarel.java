@@ -3,12 +3,11 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
-		fillPothole();
+		moveToWall();
 		
 	}
-	private void fillPothole() {
-		if (noBeepersPresent()) {
-			putBeeper();
+	private void moveToWall() {
+		if (beepersPresent()) {
 			moveAlong();
 		} else {
 			moveAlong();
