@@ -4,7 +4,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
 		turnLeft();
-		for (int i = 0 ; i < 13; i++)
+		for (int i = 0 ; i < 13; i++) {
 			while (frontIsClear()) 
 				move();
 			if (noBeepersPresent()) {
@@ -12,6 +12,7 @@ public class StoneMasonKarel extends SuperKarel {
 			} else {
 				move();
 			}
+		}
 	}
 	
 	
