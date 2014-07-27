@@ -48,8 +48,6 @@ public class StoneMasonKarel extends SuperKarel {
 		move();
 		if (leftIsBlocked()) {
 			turnRight();
-		} else {
-			turnLeft();
-		}
+		
 	}
 }
