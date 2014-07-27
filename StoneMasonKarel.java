@@ -12,10 +12,10 @@ public class StoneMasonKarel extends SuperKarel {
 			
 	}
 	private void moveAlongA() {
-		if (beepersPresent()) {
+		if (noBeepersPresent()) {
+			putBeeper();
 			move();
 		} else { 
-			putBeeper();
 			move();
 		if (facingNorth()) {
 			turnRight();
