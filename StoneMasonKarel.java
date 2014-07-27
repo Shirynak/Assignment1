@@ -37,7 +37,7 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void moveToNextPillow() {
-		if (facingNorth()) {
+		if (frontIsBlocked()) {
 			turnRight();
 		} else {
 			turnLeft();
