@@ -7,15 +7,15 @@ public class StoneMasonKarel extends SuperKarel {
 		for (int i = 0; i < 5; i++)
 			moveAlongA();
 			moveToNextPillow();
-		for (int i = 0; i < 4; i++)
+		for (int i = 0; i < 5; i++)
 			moveAlongD();
 			
 	}
 	private void moveAlongA() {
-		if (noBeepersPresent()) {
-			putBeeper();
+		if (beepersPresent()) {
 			move();
 		} else { 
+			putBeeper();
 			move();
 		if (facingNorth()) {
 			turnRight();
@@ -24,10 +24,10 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void moveAlongD() {
-		if (noBeepersPresent()) {
-			putBeeper();
+		if (beepersPresent()) {
 			move();
 		} else { 
+			putBeeper();
 			move();
 		if (facingSouth()) {
 			turnLeft();
