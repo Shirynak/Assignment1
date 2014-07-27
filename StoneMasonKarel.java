@@ -7,7 +7,7 @@ public class StoneMasonKarel extends SuperKarel {
 		putBeepers();
 		moveToNextPillow();
 		putBeepers();
-			
+		moveToNextPillow();	
 	}
 	private void putBeepers() {
 		for (int i = 0; i < 5; i++) 
