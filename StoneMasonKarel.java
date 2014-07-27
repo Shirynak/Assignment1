@@ -20,13 +20,6 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		} else { 
 			move();
-		while (facingNorth()) {
-			turnRight();
-		while (facingSouth()) {
-			turnLeft();
-		}
-		
-		}
 		}
 	}
 	
@@ -44,6 +37,11 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void moveToNextPillow() {
+		if (facingNorth()) {
+			turnRight();
+		} else {
+			turnLeft();
+		}
 		move();
 		move();
 		move();
@@ -54,4 +52,7 @@ public class StoneMasonKarel extends SuperKarel {
 			turnLeft();
 		}
 	}
+	
+		
+	
 }
