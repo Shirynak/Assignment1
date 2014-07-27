@@ -11,7 +11,10 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	private void moveIfClear() {
 		while (frontIsClear())
-			move(); 
-	}
+			move();
+			if (noBeepersPresent()) {
+				putBeeper();
+			}
 	
+	}
 }
