@@ -10,7 +10,7 @@ public class StoneMasonKarel extends SuperKarel {
 		moveToNextPillow();	
 	}
 	private void putBeepers() {
-		for (int i = 0; i < 5; i++) 
+		for (int i = 0; i < 4; i++) 
 			moveAlongA();
 		
 	}
