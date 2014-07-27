@@ -22,7 +22,7 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		while (facingNorth()) {
 			turnRight();
-		if (facingSouth()) {
+		while (facingSouth()) {
 			turnLeft();
 		}
 		
