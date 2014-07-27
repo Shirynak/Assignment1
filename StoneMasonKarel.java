@@ -7,7 +7,7 @@ public class StoneMasonKarel extends SuperKarel {
 		for (int i = 0; i < 5; i++)
 			moveAlongA();
 			moveToNextPillow();
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < 4; i++)
 			moveAlongD();
 			
 	}
