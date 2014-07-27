@@ -26,7 +26,6 @@ public class StoneMasonKarel extends SuperKarel {
 			turnLeft();
 		}
 		}
-		}
 	}
 	
 	private void moveAlongD() {
