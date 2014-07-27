@@ -4,13 +4,15 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
 		turnLeft();
-		for (int i = 0; i < 5; i++) {
-			moveAlongA();
-		}
-			moveToNextPillow();
-		for (int i = 0; i < 5; i++)
-			moveAlongD();
+		putBeepers();
+		moveToNextPillow();
+		
 			
+	}
+	private void putBeepers() {
+		for (int i = 0; i < 5; i++) 
+			moveAlongA();
+		
 	}
 	private void moveAlongA() {
 		if (noBeepersPresent()) {
