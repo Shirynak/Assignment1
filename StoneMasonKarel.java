@@ -10,7 +10,7 @@ public class StoneMasonKarel extends SuperKarel {
 	private void fixKarel() {
 		fillColumn();
 		backToBottom();
-		nextColumn();
+		
 		
 	}
 	private void fillColumn() {
