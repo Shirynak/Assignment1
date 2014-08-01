@@ -17,7 +17,7 @@ public void run() {
 	}
 	private void fixCheckboard() {
 		placeBeeper1();
-		
+		moveBack();
 	}
 	private void placeBeeper1() {
 		while (frontIsClear()) {
@@ -26,5 +26,10 @@ public void run() {
 			move();
 		}
 		
+	}
+	private void moveBack() {
+		while (frontIsClear()) {
+			move();
+		}
 	}
 }
