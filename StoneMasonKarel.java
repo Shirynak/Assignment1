@@ -9,7 +9,8 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	private void fixKarel() {
 		fillColumn();
-		
+		backToBottom();
+		nextColumn();
 		
 	}
 	private void fillColumn() {
@@ -21,6 +22,13 @@ public class StoneMasonKarel extends SuperKarel {
 		} else { 
 			move();
 		}
+		}
+	}
+	private void backToBottom() {
+		turnAround();
+		while (frontIsClear()) {
+			move();
+			
 		}
 	}
 }
