@@ -34,6 +34,7 @@ public class StoneMasonKarel extends SuperKarel {
 	private void nextColumn() {
 		turnLeft();
 		moveAlong();
+		turnLeft();
 	}
 	private void moveAlong() {
 		move();
