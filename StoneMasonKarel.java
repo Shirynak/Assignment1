@@ -10,10 +10,14 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	private void fixKarel() {
 		fillColumn();
-		putBeeper();
+		if (beepersPresent()) {
 		backToBottom();
 		nextColumn();
-		
+		} else { 
+			putBeeper();
+			backToBottom();
+			nextColumn();
+		}
 	}
 	private void fillColumn() {
 		while (frontIsClear()) {
