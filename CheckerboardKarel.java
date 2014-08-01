@@ -21,11 +21,12 @@ public void run() {
 	}
 	private void placeBeeper1() {
 		while (frontIsClear()) {
+		if (frontIsClear()) {
 			putBeeper();
 			move();
 			move();
 		}
-		
+		}
 	}
 	private void moveBack() {
 		turnAround();
