@@ -14,12 +14,13 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	private void fillColumn() {
 		turnLeft();
-		while frontIsClear() {
+		while (frontIsClear()) {
 		if (noBeepersPresent()) {
 			putBeeper();
 			move();
 		} else { 
 			move();
+		}
 		}
 	}
 }
