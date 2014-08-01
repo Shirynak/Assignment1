@@ -3,12 +3,12 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
+		turnLeft();
 		while (frontIsClear()) {
 			fixKarel();
 		}
 	}
 	private void fixKarel() {
-		turnLeft();
 		fillColumn();
 		backToBottom();
 		nextColumn();
