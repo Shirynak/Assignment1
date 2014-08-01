@@ -28,6 +28,7 @@ public void run() {
 		
 	}
 	private void moveBack() {
+		turnAround();
 		while (frontIsClear()) {
 			move();
 		}
