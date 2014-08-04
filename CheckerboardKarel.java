@@ -29,7 +29,7 @@ public void run() {
 		while (frontIsClear()) {
 		move();
 		putBeeper();
-		move();
+		
 		}
 		
 	}
