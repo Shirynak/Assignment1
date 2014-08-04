@@ -29,7 +29,7 @@ public void run() {
 		while (rightIsClear()) {
 		move();
 		putBeeper();
-		move
+		move();
 		}
 		
 	}
