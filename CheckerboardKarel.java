@@ -13,20 +13,30 @@ public class CheckerboardKarel extends SuperKarel {
 
 public void run() {
 	turnLeft();	
+	while (frontIsClear()) {
 	fixCheckboard();
 	}
+	}
 	private void fixCheckboard() {
-		placeBeeper1();
+		while (frontIsClear()) {
+		moveToEven();
+		moveToOdd();
 		moveBack();
 	}
-	private void placeBeeper1() {
-		while (frontIsClear()) {
-		if (frontIsClear()) {
-			putBeeper();
-			move();
-			move();
+	}
+	private void moveToEven() {
+		move();
+		putBeeper();
+		
+		
+		
+	}
+	private void moveToOdd() {
+		putBeeper();
+		move();
+			
 		}
-		}
+		
 	}
 	private void moveBack() {
 		turnAround();
