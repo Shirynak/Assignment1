@@ -20,8 +20,9 @@ public void run() {
 	private void fixCheckboard() {
 		while (frontIsClear()) {
 		moveToEven();
-		moveToOdd();
 		moveBack();
+		moveToOdd();
+		
 	}
 	}
 	private void moveToEven() {
