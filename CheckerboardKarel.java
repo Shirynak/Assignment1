@@ -26,7 +26,7 @@ public void run() {
 	}
 	}
 	private void moveToEven() {
-		while (frontIsClear()) {
+		while (rightIsClear()) {
 		move();
 		putBeeper();
 		
