@@ -39,9 +39,11 @@ public void run() {
 			
 	}
 	private void moveBack() {
+		while (frontIsClear()) {
 		turnAround();
 		while (frontIsClear()) {
 			move();
 		}
+	}
 	}
 }
