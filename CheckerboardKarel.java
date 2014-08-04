@@ -25,10 +25,11 @@ public void run() {
 	}
 	}
 	private void moveToEven() {
+		while (frontIsClear()) {
 		move();
 		putBeeper();
 		
-		
+		}
 		
 	}
 	private void moveToOdd() {
