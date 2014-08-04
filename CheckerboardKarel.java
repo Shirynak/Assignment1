@@ -35,8 +35,6 @@ public void run() {
 		putBeeper();
 		move();
 			
-		}
-		
 	}
 	private void moveBack() {
 		turnAround();
