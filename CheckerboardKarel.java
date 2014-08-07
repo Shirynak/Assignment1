@@ -31,7 +31,7 @@ public void run() {
 		putBeeper();
 		move();
 		}
-		move();
+		
 	}
 	private void moveToOdd() {
 		putBeeper();
