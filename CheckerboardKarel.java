@@ -11,8 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 
-public void run() {
-	turnLeft();	
+public void run() {	
 	while (frontIsClear()) {
 	fixCheckboard();
 	}
@@ -26,9 +25,9 @@ public void run() {
 	}
 	}
 	private void moveToEven() {
-		while (rightIsClear()) {
-		move();
+		while (frontIsClear()) {
 		putBeeper();
+		move();
 		move();
 		}
 		
