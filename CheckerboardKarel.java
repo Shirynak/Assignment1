@@ -10,6 +10,10 @@
 import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
+	
+	public static void main(String[] args) {
+	}
+	
 
 public void run() {	
 	while (frontIsClear()) {
@@ -45,4 +49,5 @@ public void run() {
 		}
 	}
 	}
+	
 }
